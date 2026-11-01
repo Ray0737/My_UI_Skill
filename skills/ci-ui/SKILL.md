@@ -75,3 +75,13 @@ UIs (CI-3) are Thai first with the English toggle.
 When a site's design decision changes, update the matching file in `references/` and the
 source copy in the repo (for CI-1, `docs/CI-1-Curve-Bold.md`),
 then tell the user what changed. Keep the three files as the single source of truth.
+
+## Reference websites
+
+Sites used as visual references for these styles:
+
+- Chulalongkorn University: https://www.chula.ac.th/en/
+- Anthropic: https://www.anthropic.com/
+- Claude: https://claude.com/
+- Fastwork: https://fastwork.com/
+- 1DD: https://1dd.co/

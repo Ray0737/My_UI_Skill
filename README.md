@@ -20,3 +20,13 @@ Copy `skills/ci-ui` into `~/.claude/skills/` (all projects) or `.claude/skills/`
 ## Shared rules
 
 Thai and English toggle, page blink between pages, no hover tooltips, no phone tap highlight, reduced motion respected, and an optional photo hero. They are written once in `skills/ci-ui/SKILL.md`.
+
+## Reference websites
+
+Sites used as visual references for these styles:
+
+- Chulalongkorn University: https://www.chula.ac.th/en/
+- Anthropic: https://www.anthropic.com/
+- Claude: https://claude.com/
+- Fastwork: https://fastwork.com/
+- 1DD: https://1dd.co/
