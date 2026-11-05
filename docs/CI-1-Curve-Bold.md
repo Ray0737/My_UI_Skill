@@ -84,6 +84,7 @@ Uppercase appears only in small labels and nav links on single-page sites. The m
 - **Spacing:** section padding `1.75rem 0`; heading to content `1.5rem`; list gaps `1rem` to `1.25rem`; chips `.5rem`.
 - **Grid:** `bootstrap-grid` only (no other Bootstrap parts).
 - **Doc pages:** 220px sticky chapter sidebar plus a 720px centred justified column ; a work page is a single 680px column.
+- **Label pairing:** a short bold label always sits next to a small icon, not alone and not inside a coloured badge: nav pills, icon-row items, docs-card labels, hero icon plus title, 404 title. Icon first (or above on stacked layouts), label small and bold, never the reverse order.
 
 ---
 
@@ -116,6 +117,12 @@ Uppercase appears only in small labels and nav links on single-page sites. The m
 **Justified photo gallery (`.jg`).** Flex row, `flex-grow`/`flex-basis` driven by a per-figure `--ar` (aspect ratio) custom property, so rows pack edge to edge like a Google Photos strip instead of a fixed grid. Image dims to 82% opacity on hover, no zoom. Caption below: bold title (first tag row only, hidden on repeat figures of the same group on phones) plus `.tg` meta chips (location, number). Opens into the lightbox above. Use for event/moment photo sets grouped by occasion; keep a fixed grid (`.ig-grid`) for single-cover albums instead.
 
 **FAQ accordion (`.faq .qa`).** Hairline-separated rows (`border-top`, last child also `border-bottom`), each a `<button class="q">` holding the question and a plus icon, plus a collapsible `.a` answer panel below. `aria-expanded` on the button, icon rotates on open. One open at a time or many, either is fine; group related questions under a `.blk` section heading (e.g. "Applying", "Curriculum").
+
+**Filter tab strip (`.tabs .tb`).** Plain-text tabs, no pill background: `--warm-500` inactive, `--ink` on hover, `--ink` plus a 2px underline when `.on`. Wraps to a new line on narrow screens instead of scrolling (unlike the sideways-scrolling `.info-tabs` above). Use for filtering one page's content in place, e.g. semester (M.4 Sem 1…M.6 Sem 2) or cohort (Gen 1…Gen 5) switches that swap a list below without navigating away.
+
+**404 page (`.nf`).** Centred column, vertically centred in the viewport (`min-height:100svh` minus the nav). Big greyscale-breaking number in the accent colour (`clamp(72px,16vw,140px)`), bold one-line title, a muted one-sentence explanation (max ~26em), then two buttons side by side: primary `.btn` back to home, secondary `.btn.grey` to the next-best page (e.g. "How to apply"). Keep the full nav and footer around it so the site still feels navigable.
+
+**Unit chart with legend (`.cg`/`.gb`/`.gq`/`.cl` plus `.legend`/`.lg`).** A waffle/unit chart for small counted breakdowns (e.g. alumni by university): one column (`.gb`) per category, each a 7-row grid of small rounded squares (`.cl`), one square per unit, greyscale-ranked darkest-to-lightest by size, squares pop in staggered on scroll (`animation-delay` per square, skipped under reduced motion). A matching `.legend` grid below: swatch, bold label, count plus percent, one-line description, and an optional breakdown list (`.fx`, label/number rows on hairlines). Hovering or tapping either a column or its legend row highlights both in the accent colour.
 
 **Footer.** Centred small links and a grey copyright line.
 
