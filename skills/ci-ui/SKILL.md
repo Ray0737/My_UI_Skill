@@ -64,6 +64,10 @@ UIs (CI-3) are Thai first with the English toggle.
   no native `<input type="date">` calendar, no native `alert`/`confirm`/`title` popups. Dropdowns,
   date pickers, menus and popovers are all hand-built to match the style's tokens (same radius,
   border, shadow rules as cards/pills in that CI).
+- **Dropdowns animate open/close.** Never a hard show/hide. Transition height/opacity/transform
+  (`max-height` or `grid-template-rows` plus `opacity`, `.15s`–`.25s` ease) so the menu, date
+  picker or accordion panel eases in and out, consistent with `--transition` in that CI's tokens.
+  Respect `prefers-reduced-motion` (cut to instant) same as the page blink.
 - **Search fields use an underline, not a box.** A search input is bottom-border only (the
   underline thickens or inks on focus), not a bordered/filled box like other inputs.
 
