@@ -113,6 +113,10 @@ Uppercase appears only in small labels and nav links on single-page sites. The m
 
 **Lightbox.** Full-screen viewer with `<` and `>` buttons and arrow keys.
 
+**Justified photo gallery (`.jg`).** Flex row, `flex-grow`/`flex-basis` driven by a per-figure `--ar` (aspect ratio) custom property, so rows pack edge to edge like a Google Photos strip instead of a fixed grid. Image dims to 82% opacity on hover, no zoom. Caption below: bold title (first tag row only, hidden on repeat figures of the same group on phones) plus `.tg` meta chips (location, number). Opens into the lightbox above. Use for event/moment photo sets grouped by occasion; keep a fixed grid (`.ig-grid`) for single-cover albums instead.
+
+**FAQ accordion (`.faq .qa`).** Hairline-separated rows (`border-top`, last child also `border-bottom`), each a `<button class="q">` holding the question and a plus icon, plus a collapsible `.a` answer panel below. `aria-expanded` on the button, icon rotates on open. One open at a time or many, either is fine; group related questions under a `.blk` section heading (e.g. "Applying", "Curriculum").
+
 **Footer.** Centred small links and a grey copyright line.
 
 ---

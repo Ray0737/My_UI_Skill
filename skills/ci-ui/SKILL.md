@@ -52,6 +52,20 @@ UIs (CI-3) are Thai first with the English toggle.
   controls an `aria-label` instead.
 - **No tap highlight on phones:** `a,button,summary,[role=button]{-webkit-tap-highlight-color:transparent}`.
 - External links open in a new tab with `rel="noopener"`.
+- **Hover is brightness-only.** State change on hover is a shade of the existing colour, lighter
+  or darker fill/text, never a hue swap, never an accent colour appearing out of nowhere. Active
+  or current state follows the same rule: darker/filled plus an underline or outline, not a new
+  colour.
+- **Nav adapts to the background under it.** Over a dark photo hero the nav is translucent white
+  pills/text; once the page scrolls past the hero (or on a page with no hero) the nav switches to
+  its normal light-surface colours. One nav, two looks, swapped at the scroll boundary, not two
+  separate components.
+- **No native browser chrome.** Build custom controls, not OS-default widgets: no bare `<select>`,
+  no native `<input type="date">` calendar, no native `alert`/`confirm`/`title` popups. Dropdowns,
+  date pickers, menus and popovers are all hand-built to match the style's tokens (same radius,
+  border, shadow rules as cards/pills in that CI).
+- **Search fields use an underline, not a box.** A search input is bottom-border only (the
+  underline thickens or inks on focus), not a bordered/filled box like other inputs.
 
 **Optional photo hero (any style).** For a page with a good photo:
 - Markup: a `<section class="hero-c hv dk ph">` with `style="--bg:url('x.webp');--bgs:url('x-sm.webp');--py:50%"`,
